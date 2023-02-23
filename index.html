@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    	<script type="text/javascript">
+    	    (function() {
+    	        // https://dashboard.emailjs.com/admin/account
+    	        emailjs.init('QkOZhFDqsPuznvEf3');
+    	    })();
+    	</script>
+    	<script type="text/javascript">
+    	    window.onload = function() {
+    	        document.getElementById('contact-form').addEventListener('submit', function(event) {
+    	            event.preventDefault();
+    	            // generate a five digit number for the contact_number variable
+    	            this.contact_number.value = Math.random() * 100000 | 0;
+    	            // these IDs from the previous steps
+    	            emailjs.sendForm('contact_service', 'contact_form', this)
+    	                .then(function() {
+    	                    console.log('SUCCESS!');
+    	                }, function(error) {
+    	                    console.log('FAILED...', error);
+    	                });
+    	        });
+    	    }
+    </script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Who is Mark</a></li>
+							<li><a href="#two">What does/can Mark do</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Welcome</h1>
+							<p>Just another fine responsive site template designed by <a href="https://www.linkedin.com/in/markfaulkner976/">Mark Faulkner</a>, <a href="http://html5up.net">HTML5 UP</a>,<br />
+							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Front End Developer</h2>
+									<p>I am a fresh recruit eager to dive into the world of web design</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Scientist</h2>
+									<p>I have a bachelors degree in Microbiology, specialize in genetic engineering, and have 5 years research experience</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Ever-Present Proof to the Duality of Man</h2>
+									<p>I love outdoor sports and activities, such as rock climbing, mountain biking, and snowboarding. <br /> 
+									While simultaneously being an avid gamer and coder, I am proof that there is no "type" of nerd or coder
+									</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>What does Mark do?</h2>
+							<p>Mark is a grade A team player, can code in HTML, JS, CSS, Python, and SQL.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>React</h3>
+									<p><abbr title="JavaScript">JS</abbr> being displayed as a <abbr title="HyperText Markup Language">HTML</abbr> for your viewing pleasure</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>Studying for the <abbr title="Securty+ (Plus)">SEC+</abbr> Exam</h3>
+									<p>This will help me in my goal to be involved in the cyber-security community</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>A Professional Cog</h3>
+									<p>A hard worker and a perfect fit for your industrial profiteering machine</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>A Passionate Designer</h3>
+									<p>A professional at making your artistic vision a reality</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-link"></span>
+									<h3>Expert in Client Relations</h3>
+									<p>From my experience in the service industry, I have mastered the art of conflict resolution</p>
+								</section>
+								<section>
+									<span class="icon major fa-gem"></span>
+									<h3>A True Diamond in the Rough</h3>
+									<p>I am smart, passionate, and an incredibly quick learner. I put together this site within 3 months of learning how to code</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p></p>
+							<div class="split style1">
+								<section>
+									<form id="contact-form" method="post" action="#">
+										<input type="hidden" name="contact_number">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="user_name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="email" name="user_email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li type="submit" value="Send"><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>Washington DC<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="mailto: mark.faulkner976@gmail.com">Send me an Email!</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>Available upon request</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://twitter.com/Falconingurmon" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="https://github.com/mark-faulkner976" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="https://www.linkedin.com/in/markfaulkner976/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</html>
