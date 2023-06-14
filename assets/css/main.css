@@ -2567,6 +2567,7 @@ input, select, textarea {
 		display: inline-block;
 		position: relative;
 		background-size: cover;
+		padding: 5%;
 	}
 
 		.image img {
